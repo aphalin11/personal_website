@@ -1,0 +1,38 @@
+html { 
+    box-sizing: border-box; 
+}
+
+.nav {
+    display: in-line; 
+    list-style-type:none; 
+    margin:0; 
+    padding: 40px; 
+    overflow: hidden; 
+    background: linear-gradient(to top left, #FF0000, #73A8B3 90% ); 
+
+}
+
+.nav li { 
+    float: left; 
+    font-size: 26px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    margin-left: 20px; 
+    margin-right: 30px; 
+    font-family: "Comic Sans MS"; 
+}
+
+.nav li a { 
+    border-style: solid; 
+    border-color: #73A8B3; 
+    padding: 8px; 
+    border-width: 7px; 
+    color: goldenrod;
+    text-decoration:none; 
+}
+
+heading { 
+    margin-left: 100px; 
+    margin-right: 100px;
+    background-color: rgb(227, 185, 255); 
+}
