@@ -2,37 +2,88 @@ html {
     box-sizing: border-box; 
 }
 
-.nav {
-    display: in-line; 
-    list-style-type:none; 
-    margin:0; 
-    padding: 40px; 
-    overflow: hidden; 
-    background: linear-gradient(to top left, #FF0000, #73A8B3 90% ); 
+.photo_top { 
+    background-color: forestgreen; 
+    margin-bottom: 0; 
+}
 
+.photo_top img{ 
+    display:inline-block; 
+    width: 15%; 
+    height: 200px;
+    padding:0; 
+    border-width: 0; 
+    margin-left: 120px; 
+}
+
+.nav_foot { 
+    background-color: gold; 
+    height: 50px; 
+    width: 100%; 
+    margin-top: 0; 
+    position:relative; 
+    bottom: 32px;
+}
+
+.nav_foot p { 
+    color: black; 
+    font-weight: bold; 
+    font-family: "Verdana"; 
+    font-size: 32px; 
+    text-decoration: underline; 
+    margin-left: 10px; 
+}
+
+.nav { 
+    background-color: goldenrod;
+    height: 50px;
+    position: relative; 
+    bottom: 35px;   
+}
+
+.nav ul {
+    list-style-type: none; 
+    padding:0; 
+    margin:0; 
 }
 
 .nav li { 
-    float: left; 
-    font-size: 26px; 
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    margin-left: 20px; 
-    margin-right: 30px; 
-    font-family: "Comic Sans MS"; 
+    display:inline; 
+    margin-right: 50px; 
 }
 
-.nav li a { 
-    border-style: solid; 
-    border-color: #73A8B3; 
-    padding: 8px; 
-    border-width: 7px; 
-    color: goldenrod;
+.nav a { 
+    color: black; 
+    font-family: "Helvetica"; 
+    font-size: 25px; 
     text-decoration:none; 
+    border-right: solid 1px brown; 
+    border-left: solid 1px brown; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+    background-color: burlywood; 
+    position: relative; 
+    top: 7px; 
+    margin-left: 5px;  
 }
 
-heading { 
-    margin-left: 100px; 
-    margin-right: 100px;
-    background-color: rgb(227, 185, 255); 
+
+.main_body { 
+    margin-left: 20%; 
+    margin-right: 30%;
+    background-color: forestgreen;  
+    width: 60%;
+}
+
+.main_body img { 
+    height: 500px; 
+    width: 500px; 
+    margin-left: 25%; 
+    margin-top: 10px;
+}
+
+.main_body p { 
+    text-align: center; 
+    font-size: 28px;
+    font-family: "Comic Sans";
 }
