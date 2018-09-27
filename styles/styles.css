@@ -1,5 +1,6 @@
 html { 
     box-sizing: border-box; 
+    background: #d9ffb3;
 }
 
 
@@ -127,29 +128,157 @@ html {
 }
 
   
-/* MAIN BODY: PHOTO AND TITLE */ 
+/* MAIN BODY: GRID */ 
 
-
-.main_body { 
-    margin-left: 20%; 
-    margin-right: 30%;
-    background-color: forestgreen;  
-    width: 60%;
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    -ms-grid-rows: 1fr 8fr 1fr;
+        grid-template-rows: 1fr 8fr 1fr;
+    grid-gap: 20px;
+    height: 200px;
 }
 
-.main_body img { 
-    height: 500px; 
-    width: 500px; 
-    margin-left: 25%; 
-    margin-top: 10px;
+@media screen and (max-width: 60em) {
+    .grid {
+      -ms-grid-rows: 2fr 1fr 5fr 1fr;
+          grid-template-rows: 2fr 1fr 5fr 1fr;
+    }
 }
 
-.main_body p { 
-    text-align: center; 
-    font-size: 28px;
-    font-family: "Comic Sans";
+.grid-left,
+.grid-middle,
+.grid-right,
+.grid-footer {
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: #ededed;
 }
 
-.about_me p { 
+  
+@media screen and (max-width: 60em) {
+    .grid-left {
+      -ms-grid-row: 2;
+          grid-row-start: 2;
+      -ms-grid-column: 1;
+          grid-column-start: 1;
+      grid-column-end: 4;
+    }
+}
+  
+@media screen and (max-width: 60em) {
+    .grid-middle {
+      -ms-grid-row: 3;
+          grid-row-start: 3;
+      -ms-grid-column: 1;
+          grid-column-start: 1;
+      grid-column-end: 4;
+    }
+}
+  
+@media screen and (max-width: 60em) {
+    .grid-right {
+      -ms-grid-row: 4;
+          grid-row-start: 4;
+      -ms-grid-column: 1;
+          grid-column-start: 1;
+      grid-column-end: 4;
+    }
+}
+
+.grid-footer {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+}
+  
+
+/* MAIN BODY: PHOTO AND ABOUT ME */ 
+
+h2 { 
+    font-family: 'Patua One', cursive; 
+    text-decoration: underline; 
+    font-size: 35px; 
+    margin: auto; 
+    margin-left: 35%;
+}
+
+.grid-middle a { 
+    text-decoration:none; 
+    color: brown; 
+}
+
+
+/* Contact Me */ 
+
+h3 { 
+    font-size: 20px;
+    margin-left: 35%; 
+    font-style: italic; 
+    font-weight: bold; 
+    position:relative; 
+    bottom: 10px;
+}
+
+.contact_cont { 
+    display:inline-block; 
+    width: 100%; 
+    position: relative; 
+    bottom: 35px;
+}
+
+.contact_left ul, .contact_right ul { 
+    list-style-type: none; 
+    float:left; 
+}
+
+.contact_left li, .contact_right li { 
+    color: #0000b3; 
+}
+
+.contact_right { 
+    position: relative; 
+    left: 23%;
+}
+
+.contact_left { 
+    position: relative; 
+    left: 20%; 
+    border-right: solid black 1px; 
+}
+
+
+/* Photo and Summary */ 
+
+#me { 
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 3%;
+}
+
+.grid-middle { 
+    background: linear-gradient(to right, #d9ffb3 ,#73e600 70%,#d9ffb3); 
+    border: none; 
+    position:relative; 
+    bottom: 30px;
+}
+
+.aboutme { 
+    position:relative; 
+    bottom: 5%; 
+}
+
+.me_summary { 
+    text-indent: 50px;
+    margin-left: 10%; 
+    margin-right: 10%; 
     font-size: 18px;
+}
+
+
+.grid-left, .grid-right { 
+    border:none; 
+    background: #d9ffb3; 
 }
