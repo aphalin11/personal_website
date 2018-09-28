@@ -205,6 +205,14 @@ h2 {
     margin-left: 35%;
 }
 
+#head_sum { 
+    margin-left: 10%; 
+    margin-right: 10%; 
+    font-size: 18px;
+    font-weight: bold; 
+    font-family: "Calibri";
+}
+
 .grid-middle a { 
     text-decoration:none; 
     color: brown; 
@@ -215,7 +223,7 @@ h2 {
 
 h3 { 
     font-size: 20px;
-    margin-left: 35%; 
+    margin-left: 37%; 
     font-style: italic; 
     font-weight: bold; 
     position:relative; 
@@ -226,7 +234,16 @@ h3 {
     display:inline-block; 
     width: 100%; 
     position: relative; 
-    bottom: 35px;
+    bottom: 15px;
+    border-right: solid red 2px; 
+    border-left: solid red 2px; 
+    width: 100%;
+}
+
+#resume_link { 
+    position:relative; 
+    bottom: 26px;
+    right: 160px;
 }
 
 .contact_left ul, .contact_right ul { 
@@ -236,6 +253,7 @@ h3 {
 
 .contact_left li, .contact_right li { 
     color: #0000b3; 
+    font-size: 18px;
 }
 
 .contact_right { 
@@ -249,13 +267,22 @@ h3 {
     border-right: solid black 1px; 
 }
 
+#resume_link a{ 
+    color: red; 
+    font-size: 18px; 
+    font-weight: bold; 
+    font-style: italic; 
+    text-decoration: underline; 
+    text-decoration-color: black; 
+}
+
 
 /* Photo and Summary */ 
 
 #me { 
     width: 55%;
     margin-left: 23%;
-    margin-top: 3%;
+    margin-top: 8%;
 }
 
 .grid-middle { 
@@ -281,4 +308,24 @@ h3 {
 .grid-left, .grid-right { 
     border:none; 
     background: #d9ffb3; 
+}
+
+
+/* LEFT GRID : Econometric Board */ 
+
+figure { 
+    position: relative; 
+    top: 50%; 
+}
+#econ_board { 
+    width: 120%; 
+}
+figcaption { 
+    font-size: 13px;
+    font-weight: bold; 
+    width: 120%; 
+    margin: auto; 
+}
+#butter {  
+    width: 120%; 
 }
