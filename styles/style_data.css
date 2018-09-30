@@ -74,6 +74,11 @@
 }
 
 .e4 { 
+    background: slategrey; 
+    height: 525px; 
+}
+
+.e5 { 
     height: 525px; 
     background-color: lightskyblue; 
 }
