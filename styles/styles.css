@@ -21,26 +21,51 @@ html {
 }
 
 .nav_foot { 
-    height: 95px; 
+    height: 120px; 
     background: linear-gradient(to right, #d9ffb3, #80ff00 50%, #4d9900);
     width: 100%; 
     margin-top: 0; 
     position:relative; 
     bottom: 38px;
+    display: inline-block; 
 }
 
 .nav_foot p { 
-    color: black; 
     font-weight: bold; 
-    font-size: 38px; 
     text-decoration: none; 
     margin-left: 10px; 
     position:relative; 
     top: 20px;
     font-family: 'Patua One', cursive;
+    margin-left: 10%; 
+    display: inline-block;
+    margin-bottom: 10%; 
 }
 
+.nav_foot img { 
+    position: relative; 
+    left: 17%; 
+    top: 25%; 
+    color: grey; 
+}
 
+#beta { 
+    color: red; 
+}
+
+#name { 
+    font-size: 38px;
+    text-decoration: none; 
+    color:black;
+}
+
+#motto {
+    position: relative; 
+    left: 15%; 
+    font-size: 26px; 
+    color: darkslategrey; 
+    
+}
 
 
 /* NAVIGATION BAR: HOVER LINES */ 

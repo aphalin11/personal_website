@@ -4,19 +4,143 @@
         <title>Phalin's Show-Site</title>
         <meta charset = "utf-8">
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet"> <!-- font-family: 'Patua One', cursive; -->
+        <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+        <link href ="styles/style_data.css" rel = "stylesheet" type = "text/css"> <!-- font-family: 'Patua One', cursive; -->
     </head>
     <body class = "container"> 
         <div class = "nav_foot"> 
-            <p>Aaron Phalin</p>
+            <p id = "name">Aaron Phalin</p>
+            <p id = "motto"> Aspiring Hacker// Data Explorer// Nature Lover</p>
+            <img id = "tree" src = "images/tree-of-dots-foliage (1).png" width = 60px height = 60px> 
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALCSURBVGhD7dlLqE1RHMfx6xGRRxlQGHmWR0giE8kjKQZCDCQDQjFgIHnEyISSgSJhgBSlkFeJohApryIDeQyU5JH3+/sru/792/fefTqr/z67zq8+3W7n/Ndd/3vvOmvtvVuaaaaZZupJF4zCdMzBZAxDVzR8OmMpLuMH/ub4iotYhW5ouEzCE9hJ/8EdHMQFfIN9/SUWo2EyD99hJ3kXo2EzAMdh3ye70AGlZgQ+w07sJrqjtWyHfb9sRmnRmngEOyGtjcFoL+dg635jLErJEtjJyGEUyXj42lMoJffhJ7MARfMCtlYfBj0RGv372ElktKCL5ip8/TiEZgX8JEQbYdFcgq8fg9DsgZ/ER9QS7TG2/hd6IDSnYSch71E0naD32/orCI9+qJ2E1NLIBPj6WQjPNfiJ1NLIftjaAygl9TQyCDo8ZnVHoM21lBRpZAd0kHyNhziDbcj+LT9gGUpNkUbUgH+PdR06NZeaIo1oc9R1hw6JW7ES07Acn5DVnUAtG2nS1LvYdWp+jqz2LWYgPPU2oujSV+skq9eGOBehSdGIsh52DH2ajURYUjXSC/ajWG4gLKkaUXSzwo81BSFJ2chu+LF0HR+SlI1sgh9L44ckZSPr4MfSiSAkKRvZCT/WA4QkZSMn4cfSuSwkqRrRqfcN/FgbEZJUjcyEH0f3uIYgJCka0W1SbX5+nPMIS14jummt33DRrIUf4wuGIix5jcgz9EN7WQgdEn29jvqhaa0ReYzhyEtvaCfXX8/W6PvVCE9eIzqSb4EW608chS6i9NRqPvbiHXzdK8xGKWlrsU+EHi341717WINSn1y11UgWPejZgH049v+rLnkXYSAaInmN6HK1crkN38hTVC5aoL6RW6hU+sA3IWdRqeipVF4jun9VqRxCXiNTUZn0hc5Dvgnt5h1RmfSHdmpPd9hLTEvLPzJGu3ja5hwLAAAAAElFTkSuQmCC">
+
         </div>
         <div class = "nav_contain">
                 <ul class="nav lines">
-                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="home.html">About Me</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li class = "active"><a href = "data.html">Data Analysis</a></li>
                 <li><a href="projects.html">Coding</a></li>
             </ul>    
         </div>
+        <div class = "stat_grid"> 
+            <div class = "stat_header grid_all">
+                <h2> Why I Love Statistics </h2>
+                <p class = "stat_sum"> Why do I love Statistics? I learned over years of trying new fields and disciplines that I stopped seeing 
+                my experience in learning facts, here and there, about the anatomy of the cniadaria - the size of the US judicial branch - the 
+                last words Helen spoke at the conclusion of <cite>Homer's The Illiad</cite>, that I just didn't like retaining and regurgitating. 
+                Instead, I found that the most exciting thing for me to learn was tools - the <strong> tools to learn </strong> about the world. That's 
+                how I see Statistics. It's a discipline that teaches me how to work with things that I may know nothing about intially - answer questions 
+                that may feel like an expert needs to answer. 
+                </p>
+                <p class = "stat_sum"> Statistical testing and modeling is a satisfying, constantly-rewarding (except when the R code won't debug!), and tools-focused 
+                discipline that I've grown to love. On this page of my site, I'm sharing some the statistical investigations, data explorations, and ideas I've had over 
+                time while working in this field. 
+                </p>
+            </div>
+
+            <!-- ENTRY 1 -->
+            <div class = "e_photos e1"> 
+                <p class = "e_title"> Gender and the Movies </p>
+                <img src = "images/bechdel.jpg" height = 400px width = 650px>
+                <p class = "caption">Allison Bechdel's <cite>Dykes to Watch Out For</cite></p>
+            </div>
+
+            <div class = "e_desc e1">  
+                <p><a class = "report" href = "C:\Users\aphal\Documents\projects\econ380_final_project.pdf"> Click Here for the Full Report </a><p>
+                <p class = "proj_sub ptitle">Bechdel Test and Modern Cinema <p>
+                <p class = "psum"> A group project in Econometrics where I analyze a movie data-set filled with an interesting set of explanatory variables 
+                        such as IMDB rating, genre, and budget to see which variables are significant predictors of the film passing the Bechdel Test.
+                        We found some interesting results - IMBD rated movies which failed the Bechdel Test higher, Action films more regularly failed than passed, 
+                        and 
+                </p>
+                <p class = "proj_sub pskills">Skills I've Developed</p>
+                <ul class = "ppoints">
+                    <li>Familiarity with Linear Probabilty, Probit, and Logit Models for Binary Dependent Variable Regressions </li>
+                    <li>How to Report Probability Results with Dummy Variables of Multiple Factors </li>
+                    <li>Practice with Querying API Databases (some variables were taken from Movie API Database) </li>
+                    <li>Practice with Writing a Formal Report with Abstract, Introduction, Results and Model. </li>
+                </ul>
+            </div> 
+
+            <!-- ENTRY 2 -->
+
+            <div class = "e_photos e2"> 
+                    <p class = "e_title"> Food Security and Ethnicity </p>
+                    <img src = "images/garden.jpg" height = 400px width = 650px>
+                    <p class = "caption">Southern Living </p>
+                </div>
+    
+            <div class = "e_desc e2">  
+                    <p><a class = "report" href = "C:\Users\aphal\Documents\projects\econ380_foodsecurity.pdf"> Click Here for the Full Report </a><p>
+                    <p class = "proj_sub ptitle"> Regressional Analysis on Food Justice <p>
+                    <p class = "psum"> My professor offered a data set provided by three combined sources that he himself was working on. 
+                        In the beginning of Econometrics we were told to do a simple, guided regression assignment using a specified variable 
+                        and model. I decided on my free time to explore a food insecurity index variable as a independent variable, and 
+                        run a simple OLS regression on a number of predictor variables - race, population, drought risk, etc. 
+                    </p>
+                    <p class = "proj_sub pskills">Skills I've Developed</p>
+                    <ul class = "ppoints">
+                        <li> Developed "Data Analysis" Intuition: Visualize Data, Fit a Model, Report Results. </li>
+                        <li> Skills in Chloropleth Package for Spatial Visualizations in R </li>
+                        <li> Skills in Formally Reporting Regression Results Through Visualization and Summary </li>
+                        <li> Skills in Seeking Outside Variables (Added Drought Risk) and Incorporating/Merging with Data Cleanly </li>
+                        <li> Skills in Smoothly Developing Written Report in LaTeX </li>
+                    </ul>
+            </div> 
+
+            <!-- ENTRY 3 -->
+            <div class = "e_photos e3"> 
+                    <p class = "e_title"> Monarchs and Milkweeds  </p>
+                    <img src = "images/butterfly.jpg" height = 400px width = 650px>
+                    <p class = "caption">My own photo, in my own backyard! </p>
+            </div>
+    
+            <div class = "e_desc e4">  
+                <p><a class = "report" href = "https://rpubs.com/aphalin11/361263"> Click Here for the Full Report </a><p>
+                <p class = "proj_sub ptitle"> Regressional Analysis of Monarch Butterfly Population Decline <p>
+                <p class = "psum"> I found some interesting data on my hometown. Here, I investigated the trends for each type of crime, 
+                        and designed a time series analysis graph based on the occurence of crime incidence, using the Highcharter package in R. 
+                        Lastly, I combined some of the work I've done for my R Programming course in terms of spatially mapping 
+                        crime based on district location. 
+                </p>
+                <p class = "proj_sub pskills">Skills I've Developed</p>
+                <ul class = "ppoints">
+                    <li>Familiarity with time variables in R with lubridate package </li>
+                    <li> Time series, reactive visualizations with Highcharter package in R  </li>
+                    <li> Practice with GGmaps  </li>
+                    <li> Familarity with shapefiles and spatially working with them </li>
+                    <li> Designing functions to mass produce usable plots. </li>
+                </ul>
+            </div> 
+
+
+            <!-- ENTRY 4 -->
+            <div class = "e_photos e4"> 
+                    <p class = "e_title"> Chicago and Crime </p>
+                    <img src = "images/chicago_crime.jpg" height = 400px width = 650px>
+                    <p class = "caption">CBS Chicago News</p>
+            </div>
+    
+            <div class = "e_desc e4">  
+                <p><a class = "report" href = "https://rpubs.com/aphalin11/361263"> Click Here for the Full Report </a><p>
+                <p class = "proj_sub ptitle"> Exploratory Data Analysis on Chicago Crime <p>
+                <p class = "psum"> I found some interesting data on my hometown. Here, I investigated the trends for each type of crime, 
+                        and designed a time series analysis graph based on the occurence of crime incidence, using the Highcharter package in R. 
+                        Lastly, I combined some of the work I've done for my R Programming course in terms of spatially mapping 
+                        crime based on district location. 
+                </p>
+                <p class = "proj_sub pskills">Skills I've Developed</p>
+                <ul class = "ppoints">
+                    <li>Familiarity with time variables in R with lubridate package </li>
+                    <li> Time series, reactive visualizations with Highcharter package in R  </li>
+                    <li> Practice with GGmaps  </li>
+                    <li> Familarity with shapefiles and spatially working with them </li>
+                    <li> Designing functions to mass produce usable plots. </li>
+                </ul>
+            </div> 
+            
+        </div>
+
     </body>
 </html>
