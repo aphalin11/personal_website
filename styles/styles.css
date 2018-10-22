@@ -1,14 +1,14 @@
 html { 
     box-sizing: border-box; 
-    background: #d9ffb3;
+    height: 100%; 
 }
 
-body, html {
+.container { 
     height: 100%;
-    background-image: url("./../images/chicago_bg.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("./../images/forest_bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -16,7 +16,7 @@ body, html {
 /* HEADER AND TITLE */ 
 
 .photo_top { 
-    background: linear-gradient(to right, #d9ffb3, #80ff00 50%, #4d9900); 
+    background: linear-gradient(to right, #00cccc, #008080 50%, #004d4d); 
     margin-bottom: 0; 
 }
 
@@ -113,7 +113,7 @@ body, html {
     position: absolute;
     content: '';
     transition: all 0.35s ease;
-    background-color: brown;;
+    background-color: brown;
     width: 0;
 }
   
@@ -143,12 +143,13 @@ body, html {
 /* NAVIGATION BAR: DIV */ 
 
 .nav_contain { 
-    width: 100%; 
-    background: linear-gradient(to right, #73e600,#408000 85%,#1a3300); 
-    height: 40px; 
-    position:relative; 
-    border-top: solid black 1.5px;  
+    /* background: linear-gradient(to right, #00cccc, #008080 50%, #004d4d);  */
+    background: linear-gradient(to right, #d9ffb3, #80ff00 50%, #4d9900);
+    height: 40px;  
+    position: absolute; 
+    width: 100%;
 }
+
 
 .nav {
     list-style-type:none; 
@@ -156,9 +157,9 @@ body, html {
 
 .nav li { 
     float:left; 
-    position: relative; 
-    top:1px;
-}
+    /* position: relative; 
+    top:1px; */
+}  
 
   
 /* MAIN BODY: GRID */ 
@@ -174,14 +175,6 @@ body, html {
     height: 200px;
 }
 
-
-.grid-topleft,
-.grid-topright,
-.grid-botleft, 
-.grid-botright,
-.grid-footer {
-  padding: 1rem;
-}
 
 .grid-top { 
     -ms-grid-row: 1; 
@@ -296,17 +289,25 @@ body, html {
     margin-top: 3%;
 }
 
-#resume_link { 
+.grid-top h2 { 
     color: white; 
-    font-size: 20px;
+    font-size: 48px; 
+    font-family: 'Times New Roman'; 
+    margin-left: 41%; 
+    letter-spacing: .2rem
+}
+
+#resume_link { 
+    color: #ffa31a; 
+    font-size: 22px;
     text-decoration: underline; 
     font-family: 'Patua One', cursive;
-    margin-left: 45%;
+    margin-left: 43%;
 }
 
 .grid-topleft, 
 .grid-botleft { 
-    margin-left: 15%; 
+    margin-left: 30%; 
     margin-right: 5%; 
 }
 
@@ -316,16 +317,10 @@ body, html {
     margin-left: 5%; 
 }
 
-.grid-topleft, 
-.grid-botleft,
-.grid-botright, 
-.grid-topright { 
-
-}
-
 figcaption {  
-    background-color: green;
     width: 110%;
+    color: white;
+    font-size: 16px;
 }
 
 /* the passion box image and caption */ 
@@ -335,53 +330,81 @@ figcaption {
     width: 500px;
 }
 
-.home_panel p { 
-    font-size: 20px; 
+.grid img { 
+    border-radius: 1%; 
+    border: black;
+    filter: contrast(70%); 
+    opacity: .9; 
+    z-index: 10; 
+}
+
+.img_txt { 
     color: white; 
+    font-size: 26px; 
+}
+
+.overlay {
+    position: relative;
+    bottom: 50%;
+    background-color: yellowgreen;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1; 
+    height:0;
+    transition: .5s ease;
+}
+
+.overlay_text {
+    color: white;
+    font-size: 22px;
+}
+
+.report:hover .overlay, 
+.model:hover .overlay, 
+.solver:hover .overlay, 
+.passion:hover .overlay {
+    bottom: 122%;
+    height: 101%;
+}
+  
+#report_p { 
     position: relative; 
+    bottom: 60%; 
+    left: 27%; 
 }
 
-.passion { 
-    background-color: blue; 
-    background-image: url("./../images/me_and_plants.jpg"); 
+
+#passion_p { 
+    position: relative;  
+    bottom: 20%; 
+    left: 10%; 
 }
 
-.passion p { 
-    top: 30%; 
-    left: 20%; 
+.passion img { 
+    filter: grayscale(20%);
 }
 
-.model { 
-    background-image: url("./../images/metrics_resized.png");
-    background-color: blue; 
-}
-
-.model p { 
-    top: 50%; 
-    left: 40%;
-}
-
-.report { 
-    background-image: url("./../images/debate_team.jpg"); 
-    background-color: blue; 
-}
-
-.report p { 
-    top: 15%; 
-    left: 35%; 
-}
-
-.solver { 
-    background-image: url("./../images/china_bg.jpg"); 
-    background-color: blue; 
-}
-
-.solver p { 
-    top: 50%; 
+#model_p { 
+    position: relative;  
+    bottom: 60%; 
     left: 40%; 
 }
 
+#solver_p { 
+    position: relative; 
+    bottom: 50%; 
+    left: 35%; 
+}
 
+
+
+/* foot */ 
+
+#contact_p { 
+    color: white; 
+    font-size: 18px; 
+
+}
 
 
 

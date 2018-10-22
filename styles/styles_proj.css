@@ -19,8 +19,7 @@
           grid-template-rows: 2fr 1fr 5fr 1fr;
     }
 } */ 
-
-.grid_header, 
+ 
 .grid_left, 
 .grid_mid, 
 .grid_right {
@@ -71,15 +70,25 @@
 
 /* PROJECT LISTING */ 
 
+.proj_grid { 
+    position: relative; 
+    top: 15%;
+}
+
 .proj_sum { 
     font-size: 20px;  
     margin-left: 10%; 
     margin-right: 10%; 
+    color: white; 
+}
+
+#proj_title { 
+    color: white; 
+    font-size: 26px;
 }
 
 .proj_grid h3 { 
-    position: relative; 
-    right: 12%; 
+
     text-decoration: underline; 
     font-size: 22px; 
 }

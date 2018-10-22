@@ -1,0 +1,50 @@
+.heading { 
+    position: relative; 
+    top: 15%; 
+    left: 15%;
+    color: white;
+    font-size: 26px;
+}
+
+.r_container { 
+    margin-left: 10%; 
+    margin-right: 10%; 
+    border: 1px solid black; 
+    background-color: #d9ff66; 
+    position: absolute; 
+    top: 30%;
+    padding-left: 2%; 
+    padding-right: 1%; 
+    margin-bottom: 5%;
+}
+
+.entry { 
+    border-bottom: red 1px solid; 
+}
+
+img { 
+    float: right; 
+    height: 200px; 
+    width: 300px;
+    border-radius: 1%;
+    margin-left: 1%;
+}
+
+h3 { 
+    color: brown; 
+}
+
+ul li{ 
+    padding: 3px 0; 
+}
+
+.first{ 
+    width: 45%;
+    float:right; 
+    height: 280px;
+}
+
+.second { 
+    width: 45%;
+    height: 260px;
+}

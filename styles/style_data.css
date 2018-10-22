@@ -11,9 +11,10 @@
     margin-left: 10%; 
     margin-right: 10%;
     row-gap: 40px; 
+    position: relative; 
+    top: 10%;
 } 
-
-.stat_header, 
+ 
 .e_photos, 
 .e_desc  {
   padding: 1rem;
@@ -28,7 +29,7 @@
     width: 80%; 
     margin-left: 10%; 
     border: none; 
-    background: radial-gradient(#b3ff1a, #d9ffb3 80%); 
+    /* background: radial-gradient(#b3ff1a, #d9ffb3 80%); */ 
 }
 
 .e_photos { 
@@ -41,12 +42,17 @@
 
 .stat_header h2 { 
     position:relative; 
-    right:35%;
+    left: 35%; 
+    color: white; 
+    font-family: 'Patua One', cursive; 
+    letter-spacing: .1rem;
+    font-size: 30px;
 }
 
 .stat_sum { 
     font-size: 18px; 
     font-family: "Calibri"; 
+    color: white; 
 }
 
 /* BODY: ENTRIES */ 
